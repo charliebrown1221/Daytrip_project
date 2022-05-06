@@ -8,28 +8,26 @@ user_choice = []
 def destinationb():
     choice1=random.choice(destination)
     print(f'We have selected {choice1} does this sound good?')
-    user_choice.append(choice1)
     response= input('Enter y/n: ')
     while response == ('n'):
         choice1=random.choice(destination)
         print(f'Sorry you dont like your destination how about {choice1}?')
         response= input('Enter y/n: ')
+    if response == ('y'):
         user_choice.append(choice1)
-    else :
         print('Awesome! Lets move on.')
 
 
 def transportationb():
     choice3=random.choice(transportation)
     print(f'We have selected {choice3} does this sound good?')
-    user_choice.append(choice3)
     response= input('Enter y/n: ')
     while response == ('n'):
         choice3=random.choice(transportation)
         print(f'Sorry you dont like your transportation how about {choice3}?')
         response= input('Enter y/n: ')
+    if response == ('y'):
         user_choice.append(choice3)
-    else :
         print('Awesome! Lets move on.')
 
 
@@ -37,28 +35,26 @@ def transportationb():
 def entertainmentb():
     choice4=random.choice(entertainment)
     print(f'We have selected {choice4} does this sound good?')
-    user_choice.append(choice4) 
     response= input('Enter y/n: ')
     while response == ('n'):
         choice4=random.choice(entertainment)
         print(f'Sorry you dont like your entertainment how about {choice4}?')
         response= input('Enter y/n: ')
+    if response == ('y'):
         user_choice.append(choice4)
-    else :
         print('Awesome! Lets move on.')
 
 
 def restaurantb():
     choice2=random.choice(restaurant)
     print(f'We have selected {choice2} does this sound good?')
-    user_choice.append(choice2)
     response= input('Enter y/n: ')
     while response == ('n'):
         choice2=random.choice(restaurant)
         print(f'Sorry you dont like your restaurant how about {choice2}?')
         response= input('Enter y/n: ')
+    if response == ('y'):
         user_choice.append(choice2)
-    else :
         print('Awesome! Lets move on.')
     
 
