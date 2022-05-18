@@ -68,6 +68,7 @@ def final():
         print('Enjoy your trip!')    
 
 def all():
+    user_choice.clear()
     destinationb()
     transportationb()
     entertainmentb()
